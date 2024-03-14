@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise 8 - > Pukar Neupane</title>
+    <style>
+        .cointainer {
+            width: 180vh;
+            height: 90vh;
+            position: relative;
+            background-color: blue;
+
+        }
+
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            bottom: 0;
+            left: 0;
+            background-color: red;
+            border-radius: 50px;
+            animation: ballx 3s linear infinite, bally 1s ease-out infinite alternate;
+        }
+
+        @keyframes ballx {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes bally {
+
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 50%;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="cointainer">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>

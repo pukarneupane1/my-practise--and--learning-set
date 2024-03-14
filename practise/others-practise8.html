@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise 8  - > Pukar Neupane</title>
+    <style>
+        .cointainer {
+            width: 180vh;
+            height: 90vh;
+            position: relative;
+            background-color: blue;
+
+        }
+
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            bottom: 0;
+            left: 0;
+            background-color: red;
+            border-radius: 50px;
+            animation: bounce 0.9s linear infinite ; 
+
+           
+
+        }
+
+
+        @keyframes bounce {
+            0% {
+                left: 0;
+                bottom: 0;
+            }
+            
+
+            25% {
+                left: 10%;
+                bottom: 20%;
+            }
+
+            50% {
+                left: 30%;
+                bottom: 0%;
+            }
+
+            75% {
+                left: 60%;
+                bottom: 20%;
+            }
+
+            100% {
+                left: 90%;
+                bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cointainer">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 7 - > Pukar Neupane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        nav {
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right {
+
+            margin: 0px 10vh 0px 0px;
+        }
+
+        li {
+            margin: 0px 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        span {
+            padding: 0px 2px;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 37px;
+        }
+
+        .headfather {
+            margin: 70px;
+            /* background-color: red; */
+        }
+
+        .head img {
+            margin: 20px 0px 0px 30px;
+        }
+
+        .head h1 {
+            font-weight: 200;
+            font-size: 56px;
+        }
+
+        .para {
+            font-weight: 100;
+            font-size: 25px;
+
+
+        }
+
+        .paradiv {
+            width: 90vw;
+            font-size: 20px;
+            /* width: fit-content;
+            margin: auto; */
+            text-align: center;
+        }
+
+        .button {
+            margin: 0px 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button1 {
+            margin: 50px 0px 70px 0px;
+            padding: 20px 30px;
+            background-color: #00B6D1;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bgimg {
+            display: flex;
+            font-weight: 100;
+            align-items: center;
+
+        }
+
+        .bgimg img {
+            margin: 0px 20px 0px 20vh;
+        }
+
+        .bgimg h2 {
+            font-weight: 200;
+        }
+
+        h5 {
+            padding-bottom: 1px;
+            margin: 0px 10px;
+            font-weight: 100;
+        }
+
+        .cointainer {
+            margin: 0px 200px 50px 200px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+        .item {
+            margin: 20px;
+            height: 150px;
+            background-color: #F9F9F9;
+            padding: 20px;
+        }
+
+        .button32 {
+            background-color: #09A6BD;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .button64 {
+            background-color: #81C780;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 10px;
+
+        }
+
+        .same1 {
+            padding: 10px;
+            width: fit-content;
+            margin: auto;
+        }
+
+        .same2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .same3 {
+            font-size: 13px;
+        }
+
+        .allbuttins {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 945) {
+            .cointainer {
+                grid-template-columns: 1fr;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="right">
+                <a href="/"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" width="150"
+                        alt="company logo"></a>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="/">Products <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="14" height="14" color="#000000" fill="none">
+                                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></span></a></li>
+                    <li><a href="/">Pricing <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14"
+                                    height="14" color="#000000" fill="none">
+                                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></span></a></li>
+                    <li><a href="/">Resources <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="14" height="14" color="#000000" fill="none">
+                                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></span></a></li>
+                    <li><a href="/">About us <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="14" height="14" color="#000000" fill="none">
+                                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></span></a></li>
+                    <li><a href="/">Security and compliance <span><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" width="14" height="14" color="#000000" fill="none">
+                                    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></span></a></li>
+                    <li> <a href="/"><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                                alt="">
+                </ul>
+                </li>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="headfather">
+            <div class="head">
+                <h1>Download <b>UltraEdit</b> for Windows</h1>
+                <a href="/">
+                    <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="">
+                </a>
+            </div>
+            <div>
+                <div>
+                    <p class="paradiv">Download and try UltraEdit before you buy it! This download includes the full
+                        Windows</p>
+                </div>
+                <div class="paradiv">
+                    <p>version of the text editor.</p>
+                </div>
+                <div class="button">
+                    <button class="button1">DOWNLOAD MAC OR LINUX VERSION</button>
+
+                </div>
+                <div class="bgimg">
+                    <img width="50" src="../resources/images/logo.png" alt="">
+                    <h2>Download UltraEdit</h2>
+                    <h5>v2023.2(released 2023/12/15) | Hotfix</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="cointainer">
+            <div class="item">
+                <div class="same1 same2">English</div>
+                <div class="same1">ㅤ</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">Deutsch</div>
+                <div class="same1 same3">German</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">Italiano</div>
+                <div class="same1 same3">Italian</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">Español</div>
+                <div class="same1 same3">Spanish</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">français</div>
+                <div class="same1 same3">French</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">Português brasileiro</div>
+                <div class="same1 same3">Brazilian Portuguese</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">日本</div>
+                <div class="same1 same3">Japanese</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">한국어</div>
+                <div class="same1 same3">Korean</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">中国</div>
+                <div class="same1 same3">Chinese</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="same1 same2">中國</div>
+                <div class="same1 same3">Traditional Chinese</div>
+                <div class="allbuttins">
+                    <button class="button32">Download 32-bit</button>
+                    <button class="button64">Download 64-bit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
