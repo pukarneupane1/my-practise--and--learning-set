@@ -1,0 +1,110 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   
+    html , body{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #box{
+        margin: 30px;
+        border-radius: 50px;
+        height: 300px;
+        width: 300px;
+        background-color: lightseagreen;
+        position: absolute;
+        animation-name: neupane;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        /* animation-fill-mode: forwards; means it will apply the last property */
+        /* animation-fill-mode: backwards; means it will apply previous property */
+        animation-fill-mode: forwards;
+        /* animation-iteration-count: infinite; */
+        animation-iteration-count: 2;
+        /* animation-timing-function: ease-in; */
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        /* animation-direction: reverse; */
+        animation-direction: alternate; /* means ek palta aagadi ekpalta paxadi */
+    }
+@keyframes pukar {
+    from{
+        left: 0%;
+        background-color: red;
+        top: 0%;
+    }
+    to{
+        left: 60%;
+        background-color: salmon;
+        top: 50%;
+    }
+}
+@keyframes neupane {
+    0%{
+        left: 0;
+        background-color: lightseagreen;
+        top: 0;
+        rotate: 0deg;
+    }
+    25%{
+        top: 0;
+        left: 70%;
+        background-color: pink;
+        rotate: 90deg;
+    }
+    100%{
+        top: 50%;
+        left: 70%;
+        background-color: green;
+        rotate: 180deg;
+    }
+    /* 75%{
+        top: 50%;
+        left: 0;
+        background-color: pink;
+        rotate: 270deg;
+    }
+    
+    100%{
+        left: 0;
+        background-color: salmon;
+        top: 0;
+        rotate: 360deg;
+    } */
+}
+h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+}
+h1::after{
+    content: "";
+    height: 10px;
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    background-color: black;
+}
+h1:hover::after{   
+    animation: slider ;
+    animation-duration: 2s;
+}
+@keyframes slider {
+    0%{
+        width: 0;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+        
+    }
+}
