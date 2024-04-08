@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form's Element demonstration</title>
+</head>
+<body>
+    <h1>
+        form and form's Element demonstration
+    </h1>
+    <hr>
+    <form action="">
+        <!-- label element/tag :it is inline paired or cointainer tag ; used to specify the label for form elements.
+        for="" attribute : cointains the id of input or form element for which label is being defined. -->
+        <label for="txtName">Name</label>
+
+        <!-- <input> tag : is an empty or single tag ;  used for receiving single line short text input from the user, this tag display a textbox for inputing the text;  based on the type attributes input tag can be used to receives various types of text input from user.
+            
+       type="" attribute : used to specify the type of the input field 
+        --> 
+        <input type="text" id="txtName" name="txtName">
+
+        <!-- <textarea></textarea> tag  : it is a paired tag ; used for receiving multiline long text input from user. 
+        its attribute : 
+        rows : used to specify the no. of lines to be used in textarea.
+        column : used to specify the no. of column to be used in textarea.
+        In below example textarea cointains 10 lines and 30 cols
+    
+    -->
+    <br>
+    <br>
+    <label for="textAddress">Address</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+<!--         <select></select> tag/element : paired tag; used for displaying the dropdown list / combobox in the webpage . <option></option> tag : 
+
+-->
+<select name="cmbgenders" id="cmbgenders">
+    <option value="males">males</option>
+    <option value="females">females</option>
+    <option value="others">others</option>
+</select>
+    </form>
+</body>
+</html>

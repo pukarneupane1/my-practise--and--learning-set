@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Ekements</title>
+    <style>
+
+        div{
+            border: thin solid red; padding: 1em;
+        }
+        p{
+            border: thin solid green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p>this is a paragraph with different inline elements : <span style="color: red;"></span>, <strong>bold text</strong>, <em>itallic text</em>, and a <a href="https://www.google.com">go google</a></p>
+    <p>
+        <p style="margin-top: 20px ; border: thin solid green;" >Here, even with <span style="margin-top: 20px; padding-bottom: 10px;",> custom style</span> , the inline element doesn't respect top and bottom margins or paddings. </p>
+    </p>
+    </div>
+</body>
+</html>

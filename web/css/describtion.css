@@ -1,0 +1,105 @@
+/* understanding css -> styling ✅
+Making css files ✅
+understanding linking ✅
+Css boilerplate ✅
+understanding css writing way ✅
+ # for id, . for class 
+
+understanding width and height ✅{
+    margin is the space between elements and padding is the space of inner element
+}
+understanding units, px and % ✅
+understanding margin and padding ✅
+understanding background image and things relates to it ✅
+understanding position absolute ✅
+understanding flexbox ✅
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#pukar{
+    width: 30%;
+    height: 50%;
+    background-color: #000;
+}
+.main{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px 10px 20px 30px; /* its like clockwise top right bottom left
+} */
+padding: 30px;
+/* if margin = 20px and 30px then 20 is for top and bottom and 30 is for right and left */
+}
+#shiva{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1708793699440-67fa853abd4d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8);
+    background-size: cover; /* it helps to cover background with proper image space */
+    background-position: top;
+}
+#car1{
+    width: 100px;
+    height: 120px;
+    background-color: red;
+}
+#car2{
+    width: 110px;
+    height: 90px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+}
+#car3{
+    width: 120px;
+    height: 110px;
+    background-color: green;
+}
+#box{
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+}
+#smallbox{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    left: 40%;
+    position: absolute;
+}
+#boxes{
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#boxes1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#boxes2{
+    width: 120px;
+    height: 110px;
+    background-color: pink;
+}
+#boxes3{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
